@@ -1,0 +1,14 @@
+spring:
+  profiles:
+   actives:
+     - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: myCloud-config-xy-dev
+---
+spring:
+  profiles: test
+  application:
+    name: myCloud-config-xy-test
