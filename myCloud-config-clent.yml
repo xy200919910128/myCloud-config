@@ -1,0 +1,34 @@
+spring:
+  profiles:
+   actives:
+     - dev
+---
+
+server:
+ port: 8201
+
+spring:
+  profiles: dev
+  application:
+    name: myCloud-config-client
+
+eureka:
+  client:    #客户端注册进eureka的服务列表中
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/ #将服务注册到eureka 集群的地址
+      
+---
+
+server:
+ port: 8202
+
+spring:
+  profiles: test
+  application:
+    name: myCloud-config-client
+
+eureka:
+  client:    #客户端注册进eureka的服务列表中
+    service-url:
+      defaultZone: http://eureka7002.com:7001/eureka/ #将服务注册到eureka 集群的地址      
+    
