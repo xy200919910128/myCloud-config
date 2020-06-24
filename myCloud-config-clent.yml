@@ -7,7 +7,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: myCloud-config-client
+    name: myCloud-config-client-new
 
 eureka:
   client:    #客户端注册进eureka的服务列表中
